@@ -13,8 +13,8 @@
   $W   = $Wq + ($num1/$miu);
 ?>
 
-<div class="container">
-  <h1>Resultados del Cálculo para &micro; = <?php echo $miu?> y &lambda; = <?php echo $lambda?></h1>
+<div class="container" style="background-color: rgb(117,117,177)">
+  <h1>Resultados del Cálculo para &micro; = <?php echo $miu?> y &lambda; = <?php echo $lambda?><br></h1>
   <h2><?php echo'El valor de Lq  es: ' . $Lq; ?></h2>
   <h2><?php echo'El valor de Wq  es: ' . $Wq; ?></h2>
   <h2><?php echo'El valor de L   es: ' . $L; ?></h2>
