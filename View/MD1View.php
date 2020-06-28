@@ -14,7 +14,8 @@ include 'Menu.html';
             <label for="inputLamba">Digite el valor &lambda;:</label>
             <input class="form-control" type="number" id="inputLambda">
         </div>
-        <button class="btn btn-success">Calcular</button>
+        <button class="btn btn-success" submit="submit">Calcular</button>
+        <input type="submit" name="BtnGuardar" value="Calcular" class="btn btn-primary btn-lg">
     </form>
     
     
