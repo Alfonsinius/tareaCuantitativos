@@ -10,7 +10,7 @@
   $Lq  = pow($lambda,2) / $div;
   $Wq  = $lambda / $div;
   $L   = $Lq + ($lambda/$miu);
-  $W   = $Wq + ($num/$miu);
+  $W   = $Wq + ($num1/$miu);
 ?>
 
 <div class="container">
