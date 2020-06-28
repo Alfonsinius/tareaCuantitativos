@@ -11,7 +11,7 @@ include 'Menu.html';
             <input class="form-control" type="number" name="inputPromedio">  
         </div>
         <div class="form-group">
-            <label for="inputLamba">Digite el valor &lambda;:</label>
+            <label for="inputLambda">Digite el valor &lambda;:</label>
             <input class="form-control" type="number" name="inputLambda">
         </div>
         <button class="btn btn-success" submit="submit">Calcular</button>
