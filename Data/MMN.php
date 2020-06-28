@@ -10,9 +10,12 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+       
         <?php
-         include './Menu.html';
-        // put your code here
+         include '../View/MenuLogica.html';
+
+       echo 'Aqui va el codigo para resolver ejercicios de tipo MMN';
+
         ?>
     </body>
 </html>

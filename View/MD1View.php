@@ -1,4 +1,4 @@
 <?php
 
-include './Menu.html';
+include 'Menu.html';
 echo 'Aqui va la vista para resolver ejercicios de tipo MD1';
