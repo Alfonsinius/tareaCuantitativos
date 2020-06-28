@@ -1,8 +1,8 @@
 <?php
   include '../View/MenuLogica.html';
 
-  $lambda = $_POST['lambda'];
-  $miu    = $_POST['mi'];
+  $lambda = $_POST['inputLambda'];
+  $miu    = $_POST['inputPromedio'];
   $num1   = 1;
   $num2   = 2;
 
