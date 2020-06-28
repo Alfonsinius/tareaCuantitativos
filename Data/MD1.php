@@ -14,17 +14,9 @@
 ?>
 
 <div class="container">
-  <h1>El valor de Lq  es:</h1>
-  <p><?php $Lq; ?></p>
-  <h1>El valor de Wq  es:</h1>
-  <p><?php echo'El valor de L es: ' . $Lq; ?></p>
-  <h1>El valor de L   es:</h1>
-  <p><?php $L; ?></p>
-  <h1>El valor de Q   es:</h1>
-  <p><?php $W; ?></p>
-<center><h1> <span class="label label-success"><?php echo'El valor de L es: ' . $Lq; ?> </span></h1></center><hr>
-<center><h1> <span class="label label-success"><?php echo'El valor de W es: ' . $Wq. ' convertido en minutos sería: '.$calculoW*60; ?> </span></h1></center><hr>
-<center><h1> <span class="label label-success"><?php echo'El valor de Lq es: ' . $L; ?> </span></h1></center><hr>
-<center><h1> <span class="label label-success"><?php echo'El valor de Wq es: ' . $W. ' convertido en minutos sería: '.$calculoWq*60; ?> </span></h1></center><hr>
-
+  <h1>Resultados del Cálculo para &micro; = <?php echo $miu?> y &lambda; = <?php echo $lambda?></h1>
+  <h2><?php echo'El valor de Lq  es: ' . $Lq; ?></h2>
+  <h2><?php echo'El valor de Wq  es: ' . $Wq; ?></h2>
+  <h2><?php echo'El valor de L   es: ' . $L; ?></h2>
+  <h2><?php echo'El valor de W   es: ' . $W; ?></h2>
 </div>
