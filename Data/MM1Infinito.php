@@ -41,7 +41,7 @@ function obtieneDenominadorPo($limite, $valorH, $valorU){
 }
 ?>
 
-<h1><span class="label label-danger">El resultado de MM1 infinito para un valor de la tasa de llegadas en promedio de: <?php echo $valorH ?>,  valor de la tasa de servicios en promedio de: <?php echo $valorU?> ,  numero de canales abiertos de: <?php echo $valorM?> y N de: <?php echo $valorN?>   es el siguiente:</span></h1><br><br>
+<h1><span class="label label-danger">El resultado de MM1 infinito para un valor de la tasa de llegadas en promedio de: <?php echo $valorH ?>,  valor de la tasa de servicios en promedio de: <?php echo $valorU?> ,  numero de canales abiertos de:  y N de: <?php echo $valorN?>   es el siguiente:</span></h1><br><br>
 
 <center><h1> <span class="label label-success"><?php echo'El numero promedio de clientes (unidades) dentro del sistema es de: ' . $L; ?> </span></h1></center><hr>
 <center><h1> <span class="label label-success"><?php echo'El tiempo promedio en el sistema es de: ' . $W. ' convertido en minutos sería: '.$MinutosW; ?> </span></h1></center><hr>

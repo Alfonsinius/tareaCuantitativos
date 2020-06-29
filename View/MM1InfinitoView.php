@@ -13,12 +13,12 @@ and open the template in the editor.
     </head>
     <body>
         <form action="../Data/MM1Infinito.php" method="post">
-            <label for="fname">Ingrese el valor de la tasa de llegadas promedio:</label><br>
-            <input type="number"  name="valorU"><br>
+            <label for="fname" >Ingrese el valor de la tasa de llegadas promedio:</label><br>
+            <input type="number"  name="valorU" step="0.01"><br>
             <label for="lname">Ingrese el valor de la tasa de llegadas en promedio:</label><br>
-            <input type="number" name="valorH"><br><br>
+            <input type="number" name="valorH" step="0.01"><br><br>
             <label for="lname">Ingrese el valor de N:</label><br>
-            <input type="number"  name="valorN"><br><br>
+            <input type="number"  name="valorN" step="0.01"><br><br>
             
             <input type="submit" value="Calcular">
         </form>
