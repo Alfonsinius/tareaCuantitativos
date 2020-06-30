@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include '../View/MenuLogica.html';
                                                                                        
 //valor
@@ -18,7 +18,7 @@ $valorN=$valorM-1;
  $valorFormula=1;
  
  
- $P2=obtieneValor($valorN,$valorH,$valorU);
+ $P2=(obtieneValor($valorN,$valorH,$valorU));
  $P3=((1/(obtieneFactorial($valorM))*pow(($valorH/$valorU),$valorM)));
  $P4=(($valorM*$valorU)/(($valorM*$valorU)-$valorH));
  $Po=(1/($P2+($P3*$P4)));
@@ -50,7 +50,7 @@ $valorN=$valorM-1;
 function obtieneValor($valorN,$valorH,$valorU){ 
     $factorial = 0; 
     for ($i = 0; $i <= $valorN; $i++){ 
-      $factorial += (obtieneFactorial($i)*pow(($valorH/$valorU),$i)); 
+      $factorial +=((1/(obtieneFactorial($i))*pow(($valorH/$valorU),$i))); 
     } 
     return $factorial; 
 } 
