@@ -31,11 +31,14 @@ function obtieneFactorial($numero){
 } 
 
 function obtieneDenominadorPo($limite, $valorH, $valorU){
+    print($valorU);
+    print($valorH);
     $denominadorPo = 0;
     for($i = 0; $i <= $limite; $i++) {
       $denominadorPo = $denominadorPo + (obtieneFactorial($limite)/obtieneFactorial($limite-$i))*
       (pow($valorH/$valorU, $i));
     }
+    print($denominadorPo);
     return $denominadorPo;
 }
 ?>
