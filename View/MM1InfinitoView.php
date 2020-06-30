@@ -1,29 +1,20 @@
 <?php include './Menu.html'; ?>
 
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <form action="../Data/MM1Infinito.php" method="post">
+<center><div class="container">
+    <form action="../Data/MM1Infinito.php" method="post">
+        <div class="form-group">
             <label for="fname" >Ingrese el valor de la tasa de llegadas promedio:</label><br>
-            <input type="number"  name="valorU" step="0.01"><br>
+            <input type="number"  name="valorU"  step="0.01" require><br>
+        </div>
+        <div class="form-group">
             <label for="lname">Ingrese el valor de la tasa de llegadas en promedio:</label><br>
-            <input type="number" name="valorH" step="0.01"><br><br>
+            <input type="number" name="valorH"  step="0.01" require><br>
+        </div>
+        <div class="form-group">
             <label for="lname">Ingrese el valor de N:</label><br>
-            <input type="number"  name="valorN" step="0.01"><br><br>
-            
-            <input type="submit" value="Calcular">
-        </form>
-<?php
-// put your code here
-?>
-    </body>
-</html>
+            <input type="number"  name="valorN"  step="0.01" require><br>
+        </div>
+        <input type="submit" value="Calcular">
+    </form>
+ </div>
+ </center>
