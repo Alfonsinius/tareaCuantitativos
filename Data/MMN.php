@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include '../View/MenuLogica.html';
                                                                                        
 //valor
@@ -6,7 +6,7 @@ $valorFormula=1;
 $valorU= $_POST["valorU"];
 $valorH=$_POST['valorH'];
 $valorM=$_POST['valorM'];
-$valorN=$_POST['valorN'];
+$valorN=$valorM-1;
  //valor calcular
  
  $L=0.0;
@@ -17,11 +17,11 @@ $valorN=$_POST['valorN'];
  $Po=0.0;
  $valorFormula=1;
  
- $P1=(1/((obtieneFactorial(0))*pow(($valorH/$valorU),0)));
- $P2=((1/( obtieneFactorial(1))*pow($valorH/$valorU,1)));
+ 
+ $P2=obtieneValor($valorN,$valorH,$valorU);
  $P3=((1/(obtieneFactorial($valorM))*pow(($valorH/$valorU),$valorM)));
  $P4=(($valorM*$valorU)/(($valorM*$valorU)-$valorH));
- $Po=(1/($P1+$P2+($P3*$P4)));
+ $Po=(1/($P2+($P3*$P4)));
  $L=((($valorH*$valorU*pow(($valorH/$valorU),$valorM))/(obtieneFactorial ($valorM-1)*pow($valorM*$valorU-$valorH,2) ))*$Po+($valorH/$valorU));
  $W=$L/$valorH;
  $Lq=$L-($valorH/$valorU);
@@ -46,9 +46,17 @@ $valorN=$_POST['valorN'];
     } 
     return $factorial; 
 } 
+
+function obtieneValor($valorN,$valorH,$valorU){ 
+    $factorial = 0; 
+    for ($i = 0; $i <= $valorN; $i++){ 
+      $factorial += (obtieneFactorial($i)*pow(($valorH/$valorU),$i)); 
+    } 
+    return $factorial; 
+} 
 ?>
 
-<h1><span class="label label-danger">El resultado de MMN para  un valor de la tasa de llegadas en promedio de: <?php echo $valorH ?>,  valor de la tasa de servicios en promedio de: <?php echo $valorU?> ,  numero de canales abiertos de: <?php echo $valorM?> y N de: <?php echo $valorN?>   es el siguiente:</span></h1><br><br>
+<h1><span class="label label-danger">El resultado de MMN para un λ de: <?php echo $valorH ?>,  μ de: <?php echo $valorU?> ,  M de: <?php echo $valorM?> y N de: <?php echo $valorN?>   es el siguiente:</span></h1><br><br>
 
 <center><h1> <span class="label label-success"><?php echo'El valor de L es: ' . $L; ?> </span></h1></center><hr>
 <center><h1> <span class="label label-success"><?php echo'El valor de W es: ' . $W. ' convertido en minutos sería: '.$MinutosW; ?> </span></h1></center><hr>
