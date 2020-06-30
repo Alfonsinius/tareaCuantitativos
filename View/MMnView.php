@@ -20,7 +20,7 @@ and open the template in the editor.
             <input type="number" name="valorH"><br><br>
             <label for="lname">Ingrese el valor de M:</label><br>
             <input type="number" name="valorM"><br><br>
-                        <label for="lname">Costos:</label><br>
+              <label for="lname">Costos:</label><br>
             <label for="lname">Horas laboradas:</label><br>
             <input type="number"  name="valorHoras"><br><br>
 
